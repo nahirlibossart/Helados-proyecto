@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arima', cursive;
+}
+/* menu */
+.cabeza__span{
+    font-size: 0.7rem;
+    background-color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+}
+.cabeza__span p{
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+.cabeza__menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+}
+.cabeza__menu--logo{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.cabeza__menu ul{
+    display: flex;
+    width: 24rem;
+    justify-content: space-around;
+}
+
+.cabeza__menu ul li{
+    list-style: none;
+}
+.cabeza__menu ul li a{
+    text-decoration: none;
+    color:#000;
+}
+        /*BS navbar*/
+.notificacion-align[data-bs-popper] {
+      right:0;
+      left: inherit;
+}
+.notificacion-align a{
+    padding: 0px;
+    margin-right: 10px;
+}
+.notificacion-svg{
+    margin: 7px;
+    width: 20px;
+    height: 20px;
+}
+/* aside */
+p{
+    color: #1b1a1a;
+    margin: 3rem;
+}
+/* galeria */
+.galeria{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 2rem 0 3rem;
+}
+.galeria__producto{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.galeria__producto img{
+    width: 14rem;
+}
+.galeria__button{
+    background-color: #000;
+    color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.pie{
+    background-color: #000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    align-items: center;
+}
+
+.grid__setter{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+/*GRID*/
+.grid__container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 4rem 3fr 1fr 2em;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "publi galeria galeria"
+    "publi galeria galeria"
+    "pie pie pie";
+
+}
+
+.cabeza{
+    grid-area: cabeza;
+}
+
+.publi{
+    grid-area: publi;
+}
+.galeria{
+    grid-area: galeria;
+}
+.pie{
+    grid-area: pie;
+}
+
+/*
+Si codeo de "desktop" a "mobile" tengo que usar "max-width"
+
+Si codeo de "mobile" a "desktop" tengo que usar "min-width"
+
+*/
+
+/* T A B L E T */
+@media (max-width: 768px){
+    .grid__container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 4rem 3fr 1fr 2em;
+        grid-template-areas: 
+        "cabeza cabeza "
+        "publi galeria "
+        "publi galeria "
+        "pie pie ";
+    
+    }
+    .galeria__button{
+        background-color: #04cefc;
+        color: #ffffff;
+        border: 1px solid #000;
+        border-radius: 20px;
+        height: 50px;
+    }
+
+    .galeria__producto img{
+        width: 20rem;
+    }
+}
+
+/* M O B I L E */
+@media (max-width:576px){
+    .grid__container{
+        background-color: red;
+    }
+
+    .galeria__producto img{
+        width: 5rem;
+    }
+}

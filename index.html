@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    <!--BS cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase 5 | Bootstrap Cdn</title>
+</head>
+<body>
+    <div class="grid__container">
+        <header class="cabeza grid__setter">
+            <div class="cabeza__span">
+                <p>¡Envios a domicilio con compras mayores a $3000!</p>
+            </div>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex dropdown" role="search">
+                      <button class="btn dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                      </svg>
+                        <ul class="dropdown-menu notificacion-align">
+                          <li class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-2-circle-fill notificacion-svg" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"/>
+                            </svg>
+                            <a class="dropdown-item" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                          </li>
+                          <li class="d-flex align-items-center bg-warning">
+                            <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-6-circle-fill notificacion-svg" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.21 3.855c-1.868 0-3.116 1.395-3.116 4.407 0 1.183.228 2.039.597 2.642.569.926 1.477 1.254 2.409 1.254 1.629 0 2.847-1.013 2.847-2.783 0-1.676-1.254-2.555-2.508-2.555-1.125 0-1.752.61-1.98 1.155h-.082c-.012-1.946.727-3.036 1.805-3.036.802 0 1.213.457 1.312.815h1.29c-.06-.908-.962-1.899-2.573-1.899Zm-.099 4.008c-.92 0-1.564.65-1.564 1.576 0 1.032.703 1.635 1.558 1.635.868 0 1.553-.533 1.553-1.629 0-1.06-.744-1.582-1.547-1.582Z"/>
+                            </svg>
+                            <a class="dropdown-item notificacion-align-a" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                          </li>
+                          
+                        </ul>
+                    </button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            <!--
+           <div class="cabeza__menu">
+                <h1 class="cabeza__menu--logo">skin K!</h1>
+           
+                <nav>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="page/galeria.html">Nosotros</a></li>
+                        <li><a href="">Historia</a></li>
+                    </ul>
+                </nav>
+            </div>-->
+        </header>
+        <aside class="publi grid__setter">
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut eum eos alias ipsum deleniti facilis expedita veniam sunt? Rerum numquam voluptas ea minus optio fugit temporibus a similique quae voluptatem!
+            Porro officia sint enim laudantium quod odio repellendus temporibus, magni tenetur, laboriosam ea eos incidunt accusantium ex est ipsa culpa vero quis aliquam, iure unde. Repudiandae quae ullam perferendis adipisci.</p>
+        </aside>
+        <main class="galeria grid__setter">
+            <div class="galeria__producto">
+                 <img src="img/img-1.jpeg" alt="">
+                 <button class="galeria__button" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Ver alerta</button>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolor dignissimos! Aperiam in quaerat, eveniet illo molestias id nulla atque? Ipsum consequuntur minus animi, autem odit accusamus laborum nulla eos!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button"  class="galeria__button" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="galeria__button">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="galeria__producto">
+                <img src="img/img-2.jpeg" alt="">
+                <button class="galeria__button">ver mas</button>
+           </div>
+            <div class="galeria__producto">
+                <img src="img/img-3.webp" alt="">
+                <button class="galeria__button">ver mas</button>
+           </div>
+           <div class="galeria__producto">
+                 <img src="img/img-4.webp" alt="">
+                 <button class="galeria__button">ver mas</button>
+            </div>
+            <div class="galeria__producto">
+                <img src="img/img-5.webp" alt="">
+                <button class="galeria__button">ver mas</button>
+           </div>
+           <div class="galeria__producto">
+                 <img src="img/img-6.webp" alt="">
+                 <button class="galeria__button">ver mas</button>
+            </div>
+           
+        </main>
+        <footer class="pie grid__setter">
+          
+          <span>Design Grid Responsive | kath</span>
+        </footer>
+    </div>
+
+    <!--Script BS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>
